@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Tracking</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Live Car Tracking - Pune, India</h1>
+    <div id="map"></div>
+    <div class="control-button-container">
+      <button id="lastRideBtn" class="control-button" disabled>Show Last Ride</button>
+      <button id="nextRideBtn" class="control-button" onclick="startNewRide()">Start Next Ride</button>
+    </div>
+    <div class="control-button-container">
+      <button class="arrow-button left" onclick="viewLastRoute()">⬅️</button>
+      <button class="arrow-button right" onclick="viewNextRoute()">➡️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
