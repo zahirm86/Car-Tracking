@@ -6,9 +6,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-// Custom red car icon
+// Custom car icon
 const carIcon = L.icon({
-  iconUrl: 'https://cdn-icons-png.flaticon.com/512/3208/3208707.png', // Car icon URL
+  iconUrl: './car.png', // Relative path to the local car icon file
   iconSize: [40, 40], // Size of the icon
   iconAnchor: [20, 20], // Anchor point of the icon
 });
